@@ -3,8 +3,37 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="./stylesheet/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   </head>
   <body>
 
+    <div class="container">
+      <header><h1>ES2015 Flashcards</h1></header>
+      <div class="col">
+        <div class="card horizontal">
+          <div class="card-image">
+            <img src="./images/js.svg">
+          </div>
+          <div class="card-stacked">
+            <div id="content" class="card-content">
+              <h5>Test your knowledge of ES2015 syntax!</h5>
+            </div>
+            <div id="answer" class="hidden">
+              <p></p>
+            </div>
+            <div class="card-action">
+              <a class="waves-effect waves-light btn" id="reveal" href="#">Reveal</a>
+              <a class="waves-effect waves-light btn" id="next" href="#">Next</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="/app.js"></script>
+    <script src="bundle.js"></script>
   </body>
 </html>
